@@ -1,6 +1,3 @@
-function TaskItem({ task }) {
-    return <li>{task}</li>;
-  }
-  
-  export default TaskItem;
-  
+export default function TaskItem({ task }) {
+  return <li>{task}</li>;
+}

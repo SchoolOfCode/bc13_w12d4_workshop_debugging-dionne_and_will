@@ -22,7 +22,7 @@ Here are a list of resources to help you problem solve and debug applications bu
 
 ### 👉 Task 2a:
 
-As detective developer's we need to have a keen eye for the details in our code, so for your first task we would like you take a look at the code given in task 2b and make a brief plan of how you would tackle solving the problem. ( no code is needed to be written at this point, only planning).
+As detective developers we need to have a keen eye for the details in our code, so for your first task we would like you take a look at the code given in task 2b and make a brief plan of how you would tackle solving the problem. ( no code is needed to be written at this point, only planning).
 
 ### 👉 Task 2b:
 

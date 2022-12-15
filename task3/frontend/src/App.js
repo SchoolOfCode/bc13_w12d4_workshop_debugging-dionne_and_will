@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export default function App() {
   const [todoList, settodoList] = useState([]);
 
-  const existingTodo = async () => {
+  async function existingTodo() {
     const data = await fetch("http://localhost:3001/users");
     const response = await data.json();
     settodoList(response);
@@ -18,19 +18,19 @@ export default function App() {
     existingTodo();
   }, []);
 
-  const handleSubmit = async (task) => {
+  async function handleSubmit(task) {
     const todo = {
       id: uuidv4(),
       content: task,
     };
-    const response = await fetch("http://localhost:3001/uses", {
+    const response = await fetch("http://localhost:3001/users", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(todo) 
     });
-    const data = await response.json()
+    const data = await response.json();
     settodoList(data);
   };
 
